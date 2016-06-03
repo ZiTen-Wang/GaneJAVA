@@ -16,8 +16,15 @@ public class RPG {
 		
 		showBlood(swordsman);
 		showBlood(magician);
+		drawFight(swordsman);
+		drawFight(magician);
 	}
      static void showBlood(Role role){
-    	 System.out.printf("%s Ѫ�� %d%n",role.getName(),role.getBlood());
+    	 System.out.printf("%s 血量 %d%n",role.getName(),role.getBlood());
      }
+      static void drawFight(Role role){
+    	 System.out.print(role.getName());
+    	 role.fight();
+      }
+
 }
